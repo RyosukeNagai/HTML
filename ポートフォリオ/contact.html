@@ -31,12 +31,38 @@
   
           <label for="email">メールアドレス:</label>
           <input type="email" name="メールアドレス" id="email">
+
+          <label>区分</label>
+          <input id="personal" type="radio" name="区分" value="個人の方">
+          <label for="personal">個人の方</label>
+          <input id="corporation" type="radio" name="区分" value="企業の方">
+          <label for="corporation">企業の方</label>
         </fieldset>
 
         <fieldset>
           <legend>お問い合わせ</legend>
+
+          <label for="category">お問い合わせの種類</label>
+          <select name="お問い合わせの種類" id="category">
+            <optgroup label="業務について">
+              <option value="">デザイン業務について</option>
+              <option value="" selected="selected">DTP制作について</option>
+              <option value="">プロダクトデザインについて</option>
+            </optgroup>
+
+            <optgroup label="制作について">
+              <option value="">納期について</option>
+              <option value="">価格について</option>
+              <option value="">支払い方法について</option>
+              <option value="">その他</option>
+            </optgroup>
+          </select>
           <label for="para">本文:</label>
           <textarea id="para" name="本文" placeholder="お問い合わせ内容などご自由に記入してください。"></textarea>
+
+          <label>確認</label>
+          <input id="yes" type="checkbox" name="確認" value="規約に同意します">
+          <label for="yes">規約に同意します</label>
         </fieldset>
 
         <input type="submit" value="送信する">
