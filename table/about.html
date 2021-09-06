@@ -44,26 +44,47 @@
 
 				<!-- ここからテーブル（仕事メニュー一覧） -->
 					<table>
-						<tr>
-							<td>できる事</td>
-							<td>詳細</td>
-							<td>価格</td>
-						</tr>
-						<tr>
-							<td>webデザイン</td>
-							<td>Photoshopを使用したwebサイトデザイン</td>
-							<td>50000円〜</td>
-						</tr>
-						<tr>
-							<td>webサイトのコーディング</td>
-							<td>HTML,CSS,Javascriptを利用したwebサイトのコーディング</td>
-							<td>50000円〜</td>
-						</tr>
-						<tr>
-							<td>ロゴ制作</td>
-							<td>企業やwebデザインのロゴ制作</td>
-							<td>50000円〜</td>
-						</tr>
+						<caption>workメニュー一覧
+							<details>
+								<summary>列の構成</summary>
+								<p>仕事メニューを一覧化した表。</p>
+							</details>
+						</caption>
+						<thead>
+							<tr>
+								<th scope="col">できる事</th>
+								<th scope="col">詳細</th>
+								<th scope="col">価格</th>
+							</tr>
+						</thead>
+
+						<tfoot>
+							<tr>
+								<td colspan="3">2021年現在の情報です。</td>
+							</tr>
+						</tfoot>
+
+						<tbody>
+							<tr>
+								<th scope="row">webデザイン</th>
+								<td>Photoshopを使用したwebサイトデザイン</td>
+								<td>50000円〜</td>
+							</tr>
+							<tr>
+								<th scope="row" rowspan="2">webサイトのコーディング</th>
+								<td>HTML,CSS,Javascriptを利用したwebサイトのコーディング</td>
+								<td>50000円〜</td>
+							</tr>
+							<tr>
+								<td>wordpressを利用したwebサイトのコーディング</td>
+								<td>100000円〜</td>
+							</tr>
+							<tr>
+								<th scope="row">ロゴ制作</th>
+								<td>企業やwebデザインのロゴ制作</td>
+								<td>50000円〜</td>
+							</tr>	
+						</tbody>
 					</table>
 				<!-- ここまでテーブル（仕事メニュー一覧） -->
 
