@@ -1,9 +1,14 @@
 @charset "utf-8";
 @import 'reset';
 @import 'menu';
+@import 'contact';
 
 .box-shadow {
   box-shadow: 0 2px 7px rgba(83,78,61,0.3);
+}
+
+input,textarea {
+  border: 1px solid #a6a6a6;
 }
 
 body {
@@ -104,6 +109,55 @@ body {
         padding-left: 10px;
       }
 
+      & p {
+        background-color: #ffefea;
+        padding: 10px;
+        margin: 10px 0;
+        &#contact-text {
+          font-size: 12px;
+          color: #927e7a;
+          line-height: 18px;
+        }
+      }
+
+      & table {
+
+        & tr {
+
+          & td {
+
+            &.form_title {
+              width: 130px;
+              height: 30px;
+              font-size: 15px;
+              color: #734339;
+              font-weight: 900;
+              vertical-align: top;
+            }
+            &.form_content {
+              font-size: 13px;
+              color: #a6a6a6;
+              & #form_name, #form_tel {
+                width: 421px;
+                height: 20px;
+              }
+              & .form_time {
+                width: 50px;
+                height: 22px;
+                margin-right: 5px;
+                display: inline-block;
+              }
+              & textarea {
+                width: 421px;
+                height: 83px;
+                border: 1px solid #a6a6a6;
+              }
+            }
+
+          }
+        }
+      }
+
       & ul {
         overflow: scroll;
         width: 100%;
@@ -142,6 +196,22 @@ body {
           }
         }
       }
+      
+        & #submit {
+          text-align: right;
+          & input {
+            background-color: #325a37;
+            color: #fff;
+            font-weight: 900;
+            font-size: 18px;
+            padding: 10px 20px;
+            margin-top: 5px;
+          }
+          &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+          }
+        }
     }
   
     & .right {

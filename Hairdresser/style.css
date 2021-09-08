@@ -421,6 +421,10 @@ th {
           box-shadow: 0 2px 7px rgba(83, 78, 61, 0.3);
 }
 
+input, textarea {
+  border: 1px solid #a6a6a6;
+}
+
 body {
   background-image: url(images/bg.png);
   border-top: 5px solid #345c39;
@@ -533,6 +537,50 @@ body {
   padding-left: 10px;
 }
 
+#wrapper .main .left p {
+  background-color: #ffefea;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+#wrapper .main .left p#contact-text {
+  font-size: 12px;
+  color: #927e7a;
+  line-height: 18px;
+}
+
+#wrapper .main .left table tr td.form_title {
+  width: 130px;
+  height: 30px;
+  font-size: 15px;
+  color: #734339;
+  font-weight: 900;
+  vertical-align: top;
+}
+
+#wrapper .main .left table tr td.form_content {
+  font-size: 13px;
+  color: #a6a6a6;
+}
+
+#wrapper .main .left table tr td.form_content #form_name, #wrapper .main .left table tr td.form_content #form_tel {
+  width: 421px;
+  height: 20px;
+}
+
+#wrapper .main .left table tr td.form_content .form_time {
+  width: 50px;
+  height: 22px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+#wrapper .main .left table tr td.form_content textarea {
+  width: 421px;
+  height: 83px;
+  border: 1px solid #a6a6a6;
+}
+
 #wrapper .main .left ul {
   overflow: scroll;
   width: 100%;
@@ -574,6 +622,24 @@ body {
 
 #wrapper .main .left dl dd:last-child {
   margin-bottom: 0;
+}
+
+#wrapper .main .left #submit {
+  text-align: right;
+}
+
+#wrapper .main .left #submit input {
+  background-color: #325a37;
+  color: #fff;
+  font-weight: 900;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-top: 5px;
+}
+
+#wrapper .main .left #submit:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 #wrapper .main .right {
