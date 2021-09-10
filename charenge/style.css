@@ -1,0 +1,715 @@
+/*! destyle.css v3.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  /* 1 */
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  /* 2 */
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+       appearance: checkbox;
+}
+
+[type="radio"] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+       appearance: radio;
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type="button"]:disabled,
+[type="reset"]:disabled,
+[type="submit"]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type="search"] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit;
+  /* 1 */
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  border-top: 4px solid #e66464;
+  padding: 25px 0px;
+}
+
+header #header_inner {
+  width: 970px;
+  height: 35px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header #header_inner nav {
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+header #header_inner nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-right: 1px solid #e8e8e8;
+}
+
+header #header_inner nav ul li {
+  border-left: 1px solid #e8e8e8;
+  font-size: 16px;
+  padding: 0px 25px;
+}
+
+#main_image {
+  width: 100%;
+  height: auto;
+  background-image: url(images/mainimage.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#main_image #main_image_text {
+  width: 970px;
+  height: auto;
+  margin: 0 auto;
+  padding: 60px 0px;
+}
+
+#main_image #main_image_text p {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: bold;
+  letter-spacing: 7px;
+  margin-bottom: 20px;
+}
+
+#main_image #main_image_text dl {
+  width: 380px;
+}
+
+#main_image #main_image_text dl dd {
+  margin: 20px 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+#introduction {
+  width: 100%;
+  height: auto;
+  background-color: #ed7c7d;
+}
+
+#introduction #introduction_wrapper {
+  width: 970px;
+  height: auto;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+#introduction #introduction_wrapper #introduction_title {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 30px;
+}
+
+#introduction #introduction_wrapper #introduction_title h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+  border-bottom: 4px solid #fff;
+  display: inline-block;
+  padding-bottom: 15px;
+  margin-right: 20px;
+}
+
+#introduction #introduction_wrapper #introduction_title span {
+  color: #fff;
+  font-size: 14px;
+}
+
+#introduction #introduction_wrapper #introduction_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+}
+
+#introduction #introduction_wrapper #introduction_main #teacher_list {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  height: 280px;
+  background-color: #fff;
+  padding: 15px;
+}
+
+#introduction #introduction_wrapper #introduction_main #teacher_list h4 {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+#introduction #introduction_wrapper #introduction_main #teacher_list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#introduction #introduction_wrapper #introduction_main #teacher_list ul li {
+  width: 200px;
+  height: auto;
+}
+
+#introduction #introduction_wrapper #introduction_main #teacher_list ul li dl dt {
+  margin-bottom: 8px;
+}
+
+#introduction #introduction_wrapper #introduction_main #teacher_list ul li dl .teacher_name {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+#introduction #introduction_wrapper #introduction_main #teacher_list ul li dl .teacher_comment {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+#introduction #introduction_wrapper #introduction_main #course_list {
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+  margin-left: 2%;
+  height: auto;
+  background-color: #fff;
+}
+
+#introduction #introduction_wrapper #introduction_main #course_list h4 {
+  font-size: 18px;
+  font-weight: 900;
+  padding: 15px 15px 10px 15px;
+}
+
+#introduction #introduction_wrapper #introduction_main #course_list ul li {
+  border-top: 1px solid #eae9e7;
+  padding: 15px;
+}
+
+#introduction #introduction_wrapper #introduction_main #course_list ul li#ps {
+  background-image: url(images/icon_photoshop.png);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 60px;
+  line-height: 37px;
+}
+
+#introduction #introduction_wrapper #introduction_main #course_list ul li#ai {
+  background-image: url(images/icon_ai.png);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 60px;
+  line-height: 37px;
+}
+
+#introduction #introduction_wrapper #introduction_main #course_list ul li#pr {
+  background-image: url(images/icon_pr.png);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 60px;
+  line-height: 37px;
+}
+
+#introduction #introduction_wrapper #introduction_main #course_list ul li#fw {
+  background-image: url(images/icon_fw.png);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 60px;
+  line-height: 37px;
+}
+
+#introduction #introduction_wrapper #introduction_main #course_list ul li#dw {
+  background-image: url(images/icon_dw.png);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 60px;
+  line-height: 37px;
+}
+
+#introduction #introduction_wrapper #introduction_main #course_list ul li a {
+  display: block;
+  height: 37px;
+  width: auto;
+}
+
+#price {
+  width: 100%;
+  height: 450px;
+  background-color: #fcfbfb;
+}
+
+#price #price_wrapper {
+  width: 980px;
+  height: auto;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+#price #price_wrapper #price_title {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+#price #price_wrapper #price_title h3 {
+  font-size: 24px;
+  font-weight: 900;
+  color: #474747;
+  display: inline-block;
+  border-bottom: 4px solid #e56d7c;
+  padding-bottom: 15px;
+  margin-right: 28px;
+}
+
+#price #price_wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#price #price_wrapper ul li {
+  width: 300px;
+  height: 320px;
+  background-color: #fff;
+  margin-right: 30px;
+  padding: 15px;
+  position: relative;
+}
+
+#price #price_wrapper ul li:last-child {
+  margin-right: 0;
+}
+
+#price #price_wrapper ul li dl {
+  border-bottom: 1px dotted #eae9e7;
+}
+
+#price #price_wrapper ul li dl dt .plan {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+#price #price_wrapper ul li dl dt .price {
+  color: #e56d7c;
+  font-size: 28px;
+  font-weight: 900;
+  margin: 15px 0 30px 0;
+}
+
+#price #price_wrapper ul li dl dt .price span {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+#price #price_wrapper ul li dl dd {
+  border-top: 1px dotted #eae9e7;
+  line-height: 45px;
+}
+
+#price a {
+  color: #fff;
+  font-weight: 900;
+  background-color: #e56d7c;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0 25px;
+  line-height: 36px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+footer {
+  width: 100%;
+  height: 70px;
+  background-color: #474747;
+  color: #fff;
+  text-align: center;
+  line-height: 70px;
+}
+/*# sourceMappingURL=style.css.map */

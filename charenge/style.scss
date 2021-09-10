@@ -1,0 +1,294 @@
+@charset "utf-8";
+@import 'reset';
+
+body {
+
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  border-top: 4px solid #e66464;
+  padding: 25px 0px;
+
+  & #header_inner {
+    width: 970px;
+    height: 35px;
+    margin: 0 auto;
+    display: flex;
+    & h1 {
+
+    }
+    & nav {
+      margin-left: auto;
+      margin-top: 20px;
+      & ul {
+        display: flex;
+        border-right: 1px solid #e8e8e8;
+        & li {
+          border-left: 1px solid #e8e8e8;
+          font-size: 16px;
+          padding: 0px 25px;
+          
+        }
+      }
+    }
+  }
+}
+
+#main_image {
+  width: 100%;
+  height: auto;
+  background-image: url(images/mainimage.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  & #main_image_text {
+    width: 970px;
+    height: auto;
+    margin: 0 auto;
+    padding: 60px 0px;
+
+    & p {
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: bold;
+      letter-spacing: 7px;
+      margin-bottom: 20px;
+    }
+    & dl {
+      width: 380px;
+
+      & dt {
+
+      }
+      & dd {
+        margin: 20px 0;
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+    }
+  }
+
+
+#introduction {
+  width: 100%;
+  height: auto;
+  background-color: #ed7c7d;
+
+  & #introduction_wrapper {
+    width: 970px;
+    height: auto;
+    padding: 30px 0;
+    margin: 0 auto;
+
+    & #introduction_title {
+      width: 100%;
+      height: 45px;
+      margin-bottom: 30px;
+      & h3 {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 900;
+        border-bottom: 4px solid #fff;
+        display: inline-block;
+        padding-bottom: 15px;
+        margin-right: 20px;
+      }
+      & span {
+        color: #fff;
+        font-size: 14px;
+
+      }
+    }
+    & #introduction_main {
+      display: flex;
+      height: auto;
+
+      & #teacher_list {
+        flex-basis: 70%;
+        height: 280px;
+        background-color: #fff;
+        & h4 {
+          font-size: 18px;
+          font-weight: 900;
+          margin-bottom: 10px;
+        }
+        & ul {
+          display: flex;
+          justify-content: space-between;
+          & li {
+            width: 200px;
+            height: auto;
+            & dl {
+              & dt {
+                margin-bottom: 8px;
+              }
+              & .teacher_name {
+                font-size: 14px;
+                font-weight: 900;
+              }
+              & .teacher_comment {
+                font-size: 12px;
+                line-height: 18px;
+              }
+            }
+          }
+        }
+        padding: 15px;
+      }
+      & #course_list {
+        flex-basis: 28%;
+        margin-left: 2%;
+        height: auto;
+        background-color: #fff;
+
+        & h4 {
+          font-size: 18px;
+          font-weight: 900;
+          padding: 15px 15px 10px 15px;
+        }
+        & ul {
+
+          & li {
+            border-top: 1px solid #eae9e7;
+            padding: 15px;
+            &#ps {
+              background-image: url(images/icon_photoshop.png);
+              background-repeat: no-repeat;
+              background-position: 10px center;
+              padding-left: 60px;
+              line-height: 37px;
+              
+            }
+            &#ai {
+              background-image: url(images/icon_ai.png);
+              background-repeat: no-repeat;
+              background-position: 10px center;
+              padding-left: 60px;
+              line-height: 37px;
+            }
+            &#pr {
+              background-image: url(images/icon_pr.png);
+              background-repeat: no-repeat;
+              background-position: 10px center;
+              padding-left: 60px;
+              line-height: 37px;
+            }
+            &#fw {
+              background-image: url(images/icon_fw.png);
+              background-repeat: no-repeat;
+              background-position: 10px center;
+              padding-left: 60px;
+              line-height: 37px;
+            }
+            &#dw {
+              background-image: url(images/icon_dw.png);
+              background-repeat: no-repeat;
+              background-position: 10px center;
+              padding-left: 60px;
+              line-height: 37px;
+            }
+
+            & a {
+              display: block;
+              height: 37px;
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#price {
+  width: 100%;
+  height: 450px;
+  background-color: #fcfbfb;
+
+  & #price_wrapper {
+    width: 980px;
+    height: auto;
+    padding: 30px;
+    margin: 0 auto;
+    & #price_title {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 30px;
+    
+    & h3 {
+      font-size: 24px;
+      font-weight: 900;
+      color: #474747;
+      display: inline-block;
+      border-bottom: 4px solid #e56d7c;
+      padding-bottom: 15px;
+      margin-right: 28px;
+    }
+    & span {
+
+    }
+  }
+    & ul {
+      display: flex;
+      justify-content: center;
+      & li {
+        width: 300px;
+        height: 320px;
+        background-color:#fff;
+        margin-right: 30px;
+        padding: 15px;
+        position: relative;
+        &:last-child {
+          margin-right: 0;
+        }
+        & dl {
+          border-bottom: 1px dotted #eae9e7;
+          & dt {
+            & .plan {
+              font-size: 18px;
+              font-weight: 900;
+            }
+            & .price {
+              color: #e56d7c;
+              font-size: 28px;
+              font-weight: 900;
+              margin: 15px 0 30px 0;
+              & span {
+                font-size: 16px;
+                margin-left: 10px;
+              }
+            }
+          }
+          & dd {
+            border-top: 1px dotted #eae9e7;
+            line-height: 45px;
+          }
+        }
+      }
+    }
+  }
+  & a {
+    color: #fff;
+    font-weight: 900;
+    background-color: #e56d7c;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 25px;
+    line-height: 36px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 70px;
+  background-color: #474747;
+  color: #fff;
+  text-align: center;
+  line-height: 70px;
+}
